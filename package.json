@@ -1,0 +1,18 @@
+{
+  "name": "notdoc",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:api": "cd apps/api && pnpm dev",
+    "dev:web": "cd apps/web && pnpm dev",
+    "dev": "concurrently \"pnpm run dev:api\" \"pnpm run dev:web\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
